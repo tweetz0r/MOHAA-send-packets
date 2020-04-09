@@ -13,7 +13,7 @@ try:
     sock.send("\xFF\xFF\xFF\xFF\x02" + cmd)
     received = sock.recv(65565)
     print(received)
-    sock.close()
+    sock.close() 
 except:
     print("Connection timeout.")
     sock.close()
